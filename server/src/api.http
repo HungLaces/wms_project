@@ -1,0 +1,22 @@
+POST http://localhost:4200/api/auth/register
+Content-Type: application/json
+
+{
+    "rdCode":"RD02043",
+
+    "password":"125"
+    
+
+}
+   
+###
+POST http://localhost:4200/api/auth/login
+Content-Type: application/json
+
+{
+    "rdCode": "RD02043",
+    "password": "123456aA@"
+}
+###
+Get http://192.168.10.75:4200/api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkVCJ9.eyJpZCI6MSwicmRDb2RlIjoiUkQwMjA0MyIsInJvbGVDb2RlIjoiUjEiLCJpYXQiOjE3MTk1Njc0MzEsImV4cCI6MTcxOTU2NzQ0Nn0.Uh68-54Mo6bN5-3IcWDGiFPmYyGiskNJxMpk8A_6WAc
